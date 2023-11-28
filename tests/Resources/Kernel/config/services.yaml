@@ -3,3 +3,7 @@ services:
         autoconfigure: true
         autowire: true
         public: true
+
+    RichId\CacheBundle\Domain\LocalCache\LocalCacheManager: ~
+    RichId\CacheBundle\Tests\Resources\MyClassWithCache: ~
+    RichId\CacheBundle\Tests\Resources\MyClassWithCacheByTrait: ~

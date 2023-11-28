@@ -15,7 +15,7 @@ final class LocalCacheCompilerPass extends AbstractCompilerPass
 
     public function process(ContainerBuilder $container): void
     {
-        $services = $container->findTaggedServiceIds('synergy.module');
+        $services = $container->findTaggedServiceIds(self::TAG);
         $definition = $container->findDefinition(LocalCacheManager::class);
 
         foreach ($services as $serviceId => $tags) {

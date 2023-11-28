@@ -7,7 +7,7 @@ namespace RichId\CacheBundle\Domain\LocalCache;
 class LocalCacheManager
 {
     /** @var LocalCacheInterface[] */
-    private array $services = [];
+    private $services = [];
 
     public function addService(LocalCacheInterface $service): void
     {

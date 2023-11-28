@@ -16,9 +16,8 @@
         "issues": "https://github.com/rich-id/cache-bundle/issues"
     },
     "require": {
-        "php": "^8.0",
-        "richcongress/bundle-toolbox": "^1.1",
-        "sensio/framework-extra-bundle": "^5.4|^6.0"
+        "php": ">=7.3|^8.0",
+        "richcongress/bundle-toolbox": "^1.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",

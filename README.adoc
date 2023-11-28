@@ -22,8 +22,10 @@ image:https://coveralls.io/repos/github/rich-id/cache-bundle/badge.svg?branch=ma
 image:https://api.codeclimate.com/v1/badges/af5513a99208495d8c40/maintainability[link="https://codeclimate.com/github/rich-id/cache-bundle/maintainability",window="_blank"]
 image:https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat[link="https://github.com/richcongress/test-suite/issues",window="_blank"]
 image:https://img.shields.io/badge/license-MIT-blue.svg[link="LICENSE.md",window="_blank"]
+image:https://img.shields.io/badge/PHP-7.3%2B-yellow[]
 image:https://img.shields.io/badge/PHP-8.0%2B-yellow[]
 image:https://img.shields.io/badge/Symfony-5.4%2B-black[]
+image:https://img.shields.io/badge/Symfony-4.4%2B-black[]
 
 
 A module to manage cache.
@@ -36,7 +38,7 @@ toc::[]
 
 == Installation
 
-This version of the bundle requires Symfony 5.4+ and PHP 8.0+.
+This version of the bundle requires Symfony 4.4+ and PHP 7.3+.
 
 [source,bash]
 ----
