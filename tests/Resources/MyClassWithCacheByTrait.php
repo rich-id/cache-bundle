@@ -20,7 +20,7 @@ class MyClassWithCacheByTrait implements LocalCacheInterface
         );
     }
 
-    /** @param array<string, ?string> $caches*/
+    /** @param array<string, ?bool> $caches */
     public function setCaches(array $caches): void
     {
         $this->caches = $caches;

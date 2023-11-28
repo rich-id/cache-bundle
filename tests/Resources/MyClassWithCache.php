@@ -6,7 +6,7 @@ use RichId\CacheBundle\Domain\LocalCache\LocalCacheInterface;
 
 class MyClassWithCache implements LocalCacheInterface
 {
-    /** @var array<string, ?string> */
+    /** @var array<string, ?bool> */
     protected $caches = [];
 
     public function __invoke(string $key): bool
@@ -19,7 +19,7 @@ class MyClassWithCache implements LocalCacheInterface
         return true;
     }
 
-    /** @param array<string, ?string> $caches*/
+    /** @param array<string, ?bool> $caches */
     public function setCaches(array $caches): void
     {
         $this->caches = $caches;
