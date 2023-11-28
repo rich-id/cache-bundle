@@ -120,8 +120,5 @@ return [
         \SlevomatCodingStandard\Sniffs\TypeHints\PropertyTypeHintSniff::class => [
             'enableNativeTypeHint' => false,
         ],
-        \SlevomatCodingStandard\Sniffs\Functions\FunctionLengthSniff::class => [
-            'maxLinesLength' => 40,
-        ],
     ],
 ];
