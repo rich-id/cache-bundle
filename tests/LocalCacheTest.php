@@ -48,11 +48,15 @@ final class LocalCacheTest extends TestCase
         self::assertTrue(($this->myClassWithCacheByTrait)('test1'));
         $this->myClassWithCacheByTrait->setCaches(['test1' => false]);
         self::assertFalse(($this->myClassWithCacheByTrait)('test1'));
+        $this->myClassWithCacheByTrait->setCaches(['test1' => null]);
+        self::assertNull(($this->myClassWithCacheByTrait)('test1'));
 
         self::assertTrue(($this->myClassWithCacheByTrait)('test2'));
         self::assertTrue(($this->myClassWithCacheByTrait)('test2'));
         $this->myClassWithCacheByTrait->setCaches(['test2' => false]);
         self::assertFalse(($this->myClassWithCacheByTrait)('test2'));
+        $this->myClassWithCacheByTrait->setCaches(['test2' => null]);
+        self::assertNull(($this->myClassWithCacheByTrait)('test2'));
 
         $this->localCacheManager->clearAllCaches();
 

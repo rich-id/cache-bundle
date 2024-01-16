@@ -42,6 +42,6 @@ trait LocalCacheTrait
 
     protected function hasCache(string $key): bool
     {
-        return isset($this->caches[$key]);
+        return \array_key_exists($key, $this->caches);
     }
 }

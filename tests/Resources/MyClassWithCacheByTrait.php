@@ -10,7 +10,7 @@ class MyClassWithCacheByTrait implements LocalCacheInterface
     /** @use LocalCacheTrait<bool> */
     use LocalCacheTrait;
 
-    public function __invoke(string $key): bool
+    public function __invoke(string $key): ?bool
     {
         return $this->withCache(
             $key,
@@ -20,7 +20,7 @@ class MyClassWithCacheByTrait implements LocalCacheInterface
         );
     }
 
-    /** @param array<string, ?bool> $caches */
+    /** @param array<string, bool|null> $caches */
     public function setCaches(array $caches): void
     {
         $this->caches = $caches;
