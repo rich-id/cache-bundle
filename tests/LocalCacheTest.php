@@ -2,7 +2,7 @@
 
 namespace RichId\CacheBundle\Tests;
 
-use RichCongress\TestFramework\TestConfiguration\Annotation\TestConfig;
+use RichCongress\TestFramework\TestConfiguration\Attribute\TestConfig;
 use RichCongress\TestSuite\TestCase\TestCase;
 use RichId\CacheBundle\Domain\LocalCache\LocalCacheManager;
 use RichId\CacheBundle\Tests\Resources\MyClassWithCache;
@@ -11,8 +11,8 @@ use RichId\CacheBundle\Tests\Resources\MyClassWithCacheByTrait;
 /**
  * @covers \RichId\CacheBundle\Domain\LocalCache\LocalCacheManager
  * @covers \RichId\CacheBundle\Domain\LocalCache\LocalCacheTrait
- * @TestConfig("container")
  */
+#[TestConfig('container')]
 final class LocalCacheTest extends TestCase
 {
     /** @var LocalCacheManager */
